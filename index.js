@@ -9,5 +9,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(3100, () => {
-  console.log("Serveur Started");
+  console.log("Server Started");
 });
