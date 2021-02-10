@@ -1,13 +1,14 @@
 const express = require("express");
 const cors = require("cors");
-
 const app = express();
 app.use(cors());
 
+const data = require("./data.json");
+
 app.get("/", (req, res) => {
-  return res.json("ok");
+  res.json(data);
 });
 
-app.listen(3100, () => {
+app.listen("https://mahe-deliveroo.netlify.app", () => {
   console.log("Server Started");
 });
