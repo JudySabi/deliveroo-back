@@ -9,6 +9,6 @@ app.get("/", (req, res) => {
   res.json(data);
 });
 
-app.listen("https://mahe-deliveroo.netlify.app", () => {
+app.listen(process.env.PORT || 3100, () => {
   console.log("Server Started");
 });
